@@ -1,0 +1,138 @@
+/*Padrão*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+html body{
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*--- header --*/
+
+header{
+    display: flex;
+    background: linear-gradient(#1b171f, rgb(25,20,39));
+    padding: 18px;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2%;
+    max-width: 1200px;
+    margin: 0 auto;        
+    gap: 60px;
+}
+
+.logo{
+    width: 70px;
+    height: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+a.container-logo{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container-logo span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.container-search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: #413a47;
+    border-radius: 45px;
+    background-color: #413a47;
+}
+.container-input input{    
+    width: 100%;
+    background-color: #413a47;
+    border: 0;
+    color: #fff;
+    outline: 0;
+    margin: 0 10px;
+    padding: 10px;
+}
+.container-input img{
+    width: 20px;
+    height: 20px;
+}
+
+.container-search button{
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    transition: ease-in-out .2s;
+}
+.container-search button:hover{
+    background-color: #ff1396;
+    color: #fff;
+}
+.menu-header-desktop ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.menu-header-desktop ul{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-header-desktop a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-header-desktop a:hover{
+    text-decoration: underline;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media(max-width:1100px){
+    .menu-header-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+}
