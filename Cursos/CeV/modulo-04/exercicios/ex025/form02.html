@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+</head>
+<body>
+    <h1>Testando formulario 02</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <!--Required é para tornar um campo de formulario obrigatorio-->
+            <!--Minlength é para indicar a quantidade minima para caracter digitada-->
+            <!--maxlength é para indicar a quantidade maxima para caracter digitada-->
+            <label for="iuser">Nome:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="20"> 
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required  minlength="5" maxlength="15">
+        </p>
+        <p>
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
