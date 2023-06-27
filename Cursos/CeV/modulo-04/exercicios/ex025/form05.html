@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 05</title>
+    <!--fieldset vai criar um espaço para ser add as informações do formulario como um quadrado-->
+    <!--label vai ser utilizado para poder clicar no nome tbm para selecionar ou marcar-->
+    <!--Se vc add o mesmo nome em "name" no caso do "radio" ele deixar desmarca a opção selecionada-->
+</head>
+<body>
+    <h1>Formulario checkbox-e-radio-button</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc"><label for="imasc">Maculino</label>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+            <input type="checkbox" name="Fultbol" id="iFultbol"><label for="iFultbol">Fultbol</label>
+            <input type="checkbox" name="Volei" id="iVolei"><label for="iVolei">Volei</label>
+            <input type="checkbox" name="Tenis" id="iTenis">Tenis
+            <input type="checkbox" name="Basquete" id="iBasquete"><label for="iTenis">Basquete</label>
+            <input type="checkbox" name="MMA" id="iMMA"><label for="iMMA">MMA</label>
+        </fieldset>
+        <p>            
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

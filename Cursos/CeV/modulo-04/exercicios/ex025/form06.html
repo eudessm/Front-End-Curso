@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 06</title>
+    <!--fieldset vai criar um espaço para ser add as informações do formulario como um quadrado-->
+    <!--label vai ser utilizado para poder clicar no nome tbm para selecionar ou marcar-->
+    <!--Se vc add o mesmo nome em "name" no caso do "radio" ele deixar desmarca a opção selecionada-->
+</head>
+<body>
+    <h1>Formulario color-range-e-file</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            ç<label for="icor">Cor</label>
+            <input type="cor" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+        <p>
+            <label for="ifile">Imagem</label>
+            <input type="file" name="file" id="ifile">
+        </p>
+        <p>            
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
